@@ -21,11 +21,11 @@ The `main` branch contains the most advanced version, while the `part_one` branc
 You have 2 options to install our project. You can install the most advanced project using git clone :
 
 ```
-git clone https://github.com/hezaqqq/c_dataframe.git
+git clone https://github.com/hezaqqq/cdataframe.git
 ```
 Or git clone the `part_one` branch :
 ```
-git clone -b part_one https://github.com/hezaqqq/c_dataframe.git
+git clone -b part_one https://github.com/hezaqqq/cdataframe.git
 ```
 
 ### Install
