@@ -1,5 +1,5 @@
-# CDataframe_tacca_tran
-> ###### 2023-L1 EFREI TACCA Timothée, TRAN Kim-Lan
+# CDataframe
+> ###### 2023-L1 EFREI
 
 
 ## Introduction
@@ -21,22 +21,20 @@ The `main` branch contains the most advanced version, while the `part_one` branc
 You have 2 options to install our project. You can install the most advanced project using git clone :
 
 ```
-git clone https://github.com/timotheetacca/CDataframe_tacca_tran.git
+git clone https://github.com/hezaqqq/CDataframe_tacca_tran.git
 ```
 Or git clone the `part_one` branch :
 ```
-git clone -b part_one https://github.com/timotheetacca/CDataframe_tacca_tran.git
+git clone -b part_one https://github.com/hezaqqq/CDataframe_tacca_tran.git
 ```
 
 ### Install
 
-You can also directly install the latest release of our project from [here](https://github.com/timotheetacca/CDataframe_tacca_tran). Be sure to download the version of the project you want (`part_one` or `main`)
-
-![download_cd](https://github.com/timotheetacca/CDataframe_tacca_tran/assets/66522009/f9067b4c-72d6-43ac-88a9-c637147a1cb0)
+You can also directly install the latest release of our project from [here](https://github.com/hezaqqq/CDataframe_tacca_tran). Be sure to download the version of the project you want (`part_one` or `main`)
 
 Ensure `main.c` is in the same directory as the other .c files and execute `main.c`.
 
-![main_cd](https://github.com/timotheetacca/CDataframe_tacca_tran/assets/66522009/2b56d881-54fc-423b-b402-c0229a3197f5)
+![main_cd](https://github.com/hezaqqq/CDataframe_tacca_tran/assets/66522009/2b56d881-54fc-423b-b402-c0229a3197f5)
 
 ## Usage
 
@@ -97,6 +95,3 @@ Our program uses dynamic arrays and is able of performing the following commands
 
 Some functions are not referenced in the list because they were created to be used in a function. If you want to use them, we invite you to directly modify the `main.c`
 
-## Feedback
-
-If you have any feedback, please reach out to us at timothee.tacca@efrei.net, kim-lan.tran@efrei.net
