@@ -1,6 +1,4 @@
 # CDataframe
-> ###### 2023-L1 EFREI
-
 
 ## Introduction
 
