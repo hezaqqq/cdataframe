@@ -1,95 +1,121 @@
 # CDataframe
 
-## Introduction
+A C library that provides a DataFrame-like data structure and operations, inspired by Python's Pandas library.
 
-Spreadsheet programs such as LibreOffice Calc or MS Exceed are capable of sorting, displaying, calculating  data frames and much more. 
+## Description
 
-In python, a wide range of functions can be used to import, clean, analyse and visualise data. This flexibility is achieved through the use of a Pandas-specific data structure called "DataFrame", which is managed in a similar way to a spreadsheet in a spreadsheet application.
+Spreadsheet applications such as LibreOffice Calc and Microsoft Excel can be used to store, display, sort, and manipulate tabular data.
 
-However, such a library is not available in the C language, which is why in this project we want to offer an alternative by developing a library written in the C language that can be used to implement some of the existing functions of Pandas.
+In Python, the [Pandas](https://pandas.pydata.org/) library provides a powerful `DataFrame` structure for importing, cleaning, analysing, manipulating, and visualising data.
 
-‎
- 
+The C language does not provide an equivalent data structure by default. The goal of **CDataframe** is to provide a C-based alternative that implements a selection of DataFrame operations inspired by Pandas.
 
-The `main` branch contains the most advanced version, while the `part_one` branch uses a CDataframe prototype accepting only int values
+The project uses dynamic arrays to store and manipulate data and provides an interactive program through which the different operations can be tested.
 
-## Download
+The repository contains two main versions:
 
-### Git clone
-You have 2 options to install our project. You can install the most advanced project using git clone :
+* **`main`** — the most advanced version, supporting the full CDataframe implementation.
+* **`part_one`** — an earlier prototype that only supports integer values.
 
-```
+## Getting Started
+
+### Dependencies
+
+To compile and run the project, you need:
+
+* A C compiler such as **GCC**
+* A terminal or command prompt
+* A C development environment such as **Visual Studio Code**, **Code::Blocks**, or **CLion** (optional)
+
+The project is designed to run on common operating systems such as Windows, Linux, and macOS, provided a compatible C compiler is available.
+
+### Installing
+
+Clone the main version of the project:
+
+```bash
 git clone https://github.com/hezaqqq/cdataframe.git
 ```
-Or git clone the `part_one` branch :
-```
+
+To clone the `part_one` prototype instead:
+
+```bash
 git clone -b part_one https://github.com/hezaqqq/cdataframe.git
 ```
 
-### Install
+Then navigate to the project directory:
 
-You can also directly install the latest release of our project from [here](https://github.com/hezaqqq/CDataframe_tacca_tran). Be sure to download the version of the project you want (`part_one` or `main`)
+```bash
+cd cdataframe
+```
 
-Ensure `main.c` is in the same directory as the other .c files and execute `main.c`.
+Alternatively, you can download the project directly from the [GitHub repository](https://github.com/hezaqqq/CDataframe_tacca_tran).
 
-![main_cd](https://github.com/hezaqqq/CDataframe_tacca_tran/assets/66522009/2b56d881-54fc-423b-b402-c0229a3197f5)
+Make sure that `main.c` is located in the same directory as the other `.c` and `.h` files.
 
-## Usage
+### Executing program
 
-After launching the program, you should find yourself in front of a list of orders, enter the order number in order to use it. 
+Compile the project using your C compiler. For example, with GCC:
 
-All commands require the creation of a CDataframe, we recommend that you create it directly by executing command n°**1** from the start.
+```bash
+gcc *.c -o cdataframe
+```
 
-Our program uses dynamic arrays and is able of performing the following commands:
+Then run the program:
 
-* Create a new CDATAFRAME
+**Linux / macOS:**
 
-* Fill a CDATAFRAME with data
+```bash
+./cdataframe
+```
 
-* Hard fill a CDATAFRAME
+**Windows:**
 
-* Display the contents of a CDATAFRAME
+```bash
+cdataframe.exe
+```
 
-* Display a limited range of rows in a CDATAFRAME
+Once the program starts, an interactive menu will be displayed.
 
-* Display a limited range of columns in a CDATAFRAME
+1. Create a CDataframe by selecting command **1**.
+2. Select the command corresponding to the operation you want to perform.
+3. Follow the instructions displayed by the program.
+4. Use the available commands to manipulate and inspect the CDataframe.
 
-* Add a row to a CDATAFRAME
+## Help
 
-* Delete a row from a CDATAFRAME
+### The program does not compile
 
-* Add a column to a CDATAFRAME
+Make sure that:
 
-* Delete a column from a CDATAFRAME
+* All `.c` and `.h` files are present in the project directory.
+* `main.c` is located alongside the other source files.
+* Your C compiler is correctly installed and accessible from the terminal.
 
-* Rename a column in a CDATAFRAME
+For GCC, you can check your installation with:
 
-* Check if a value exists in a CDATAFRAME
+```bash
+gcc --version
+```
 
-* Access a value in a CDATAFRAME
+### The program does not start
 
-* Replace a value in a CDATAFRAME
+Make sure you are running the executable from the correct directory.
 
-* Display the number of rows in a CDATAFRAME
+On Linux/macOS:
 
-* Display the number of columns in a CDATAFRAME
+```bash
+./cdataframe
+```
 
-* Display the names of columns in a CDATAFRAME
+On Windows:
 
-* Count cells in a CDATAFRAME based on a condition
+```bash
+cdataframe.exe
+```
 
-* Sort a column
+### Testing individual functions
 
-* Print a column by index
+Some functions are not included in the interactive menu because they are intended to be used internally by other CDataframe functions.
 
-* Erase index of a column
-
-* Check if index exists in a column
-
-* Update index of a column
-
-* Search for a value in a column
-
-
-Some functions are not referenced in the list because they were created to be used in a function. If you want to use them, we invite you to directly modify the `main.c`
-
+To test these functions directly, modify `main.c` and call the desired function manually.
